@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{7181541F-EBA1-4224-A639-6F6D04DE790C}|http">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.OrderMenage PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OrderMenage/Views/Order/Delete.cshtml">
+    <Files>
+      <File FileName="OrderMenage/Models/OrderDbContext.cs" Line="21" Column="28" />
+      <File FileName="OrderMenage/appsettings.json" />
+      <File FileName="OrderMenage/Program.cs" />
+      <File FileName="OrderMenage/Models/ErrorViewModel.cs" Line="10" Column="1" />
+      <File FileName="OrderMenage/Views/Shared/_Layout.cshtml" Line="8" Column="1" />
+      <File FileName="OrderMenage/Models/Order.cs" Line="39" Column="49" />
+      <File FileName="OrderMenage/Views/Order/Index.cshtml" Line="39" Column="48" />
+      <File FileName="OrderMenage/Controllers/OrderController.cs" Line="90" Column="1" />
+      <File FileName="OrderMenage/Properties/launchSettings.json" />
+      <File FileName="OrderMenage/Views/Order/AddEdit.cshtml" Line="57" Column="19" />
+      <File FileName="OrderMenage/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="OrderMenage/wwwroot/css/site.css" />
+      <File FileName="OrderMenage/Models/Login.cs" Line="9" Column="1" />
+      <File FileName="OrderMenage/Controllers/AccessController.cs" Line="38" Column="51" />
+      <File FileName="OrderMenage/Views/Order/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="OrderMenage/Views/_ViewImports.cshtml" />
+      <File FileName="OrderMenage/Models/Product.cs" Line="20" Column="39" />
+      <File FileName="OrderMenage/Controllers/ProductController.cs" Line="45" Column="10" />
+      <File FileName="OrderMenage/Views/Product/Index.cshtml" Line="52" Column="17" />
+      <File FileName="OrderMenage/Views/Product/AddEdit.cshtml" Line="37" Column="27" />
+      <File FileName="OrderMenage/Views/Product/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="OrderMenage/Migrations/OrderDbContextModelSnapshot.cs" />
+      <File FileName="OrderMenage/Migrations/20240121182922_initial.cs" />
+      <File FileName="OrderMenage/Views/Access/Login.cshtml" Line="30" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OrderMenage" expanded="True">
+            <Node name="OrderMenage" expanded="True">
+              <Node name="Controllers" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

@@ -1,0 +1,46 @@
+﻿@model OrderMenage.Models.Login;
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device=width" />
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OrderMenage.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <div class="d-flex align-items-center justify-content-center vh-100">
+        <div class="centered-div">
+            <h1>Logowanie</h1>
+            <form asp-controller="Access" asp-action="Login" method="post">
+                <div class="form-group mt-5">
+                    <input type="text" placeholder="użytkownik" asp-for="Name" />
+                </div>
+                <div class="form-group mt-5">
+                    <input type="password" placeholder="hasło" asp-for="PassWord" />
+                </div>
+                <div class="mt-5">
+                        <input class="form-check-input border" type="checkbox" asp-for="KeepLoggedIn" id="keepLoggedInCheckbox">
+                        <label class="form-check-label" for="keepLoggedInCheckbox">Nie wylogowuj</label>
+                </div>
+                <div class="form-group col-md-4 offset-md-4">
+                    <button class="mt-5 btn btn-sm btn-success" type="submit">Zaloguj</button>
+                </div>
+
+                    @if (ViewData["ValidateMessage"] != null)
+                    {
+                        <br />
+                        <label>@ViewData["ValidateMessage"]</label>
+                    }
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

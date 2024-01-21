@@ -1,0 +1,90 @@
+@model IEnumerable<OrderMenage.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Zamówienia</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerMail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderTime)
+            </th>
+            <th>
+                <a asp-action="AddEdit" class="btn btn-sm btn-success">
+                    Dodaj
+                    <i class="fa-solid fa-plus"></i>
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderTime)
+            </td>
+            <td>
+                <form asp-action="Delete" asp-route-id="@item.Id">
+                    <div class="brn-group btn-group-sm">
+                        <a asp-action="AddEdit" asp-route-id="@item.Id" class="btn btn-warning">
+                            Edytuj
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a> |
+                        <button type="submit" class="btn btn-danger"
+                                onclick="return confirm('Potwierdź usunięcie zamówienia')">
+                            Usuń
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

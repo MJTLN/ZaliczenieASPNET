@@ -5,7 +5,7 @@ Grupa: S22-32,
 
 Maciej Jankowski-Tomków (287660),
 
-Zosia Wrzesińska (nr indeksu), 
+Zosia Wrzesińska (287650), 
 
 Justyna Świerczek(287664)
 
